@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.681);
+            }
+
+            #main {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            h1 {
+                color: white;
+                font-family: "Press Start 2P", system-ui;
+                font-size: min(6vh, 9vw);
+                position: relative;
+                top: 3vh;
+            }
+
+            #section {
+                width: min(70vw, 70vh);
+                height: min(70vw, 70vh);
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: min(2vh, 2vw);
+            }
+
+            .pad {
+                height: 100%;
+                background-color: aliceblue;
+                border-radius: min(2vh, 2vw);
+
+                font-family: "Montserrat", sans-serif;
+                font-size: min(15vh, 15vw);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #status {
+                color: rgb(223, 233, 88);
+                font-family: "Press Start 2P", system-ui;
+                font-size: min(2vh, 5vw);
+            }
+
+            #reset {
+                color: white;
+                font-family: "Press Start 2P", system-ui;
+                text-decoration: underline;
+                font-size: min(2vh, 4vw);
+                position: relative;
+                top: -3vh;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <h1>Tic Tac Toe</h1>
+            <div id="section">
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+                <div class="pad"></div>
+            </div>
+            <div id="status">X's turn</div>
+            <div id="reset">reset</div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
